@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
 
 function Navigator() {
     return(
-        <div className='container-fluid'>
+        <div className='container-fluid' id='nav'>
             <div className='row'>
+                <Link to='/' id='logo-anchor'>
+                    <img id='logo' src='/images/logo.png' alt='Camila Guzman logo' />
+                </Link>
                 <div className='col'>
-                    <Link to='/'>
-                        <img src={logo} alt='Camila Guzman logo' />
-                    </Link>
                     <ul>
                         <li>Home</li>
                         <li>Drawing</li>
@@ -16,12 +15,23 @@ function Navigator() {
                         <li>App Demo</li>
                     </ul>
                 </div>
-                <div className='col' />
-                <div className='col'>
+                <div className='col' id='profiles-list'>
                     <ul>
-                        <li>LinkedIn</li>
-                        <li>GitHub</li>
-                        <li>Instagram</li>
+                        <li>
+                            <a href='https://www.linkedin.com/in/camila-guzman023/'>
+                                <img className='profile-logo' src='/linkedIn_logo.svg' alt='LinkedIn profile' />
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://github.com/Goldencami'>
+                                <img className='profile-logo' src='/github_logo.svg' alt='gitHub profile' />
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://www.instagram.com/goldencami1/'>
+                                <img className='profile-logo' src='/instagram_logo.svg' alt='Instagram profile' />
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

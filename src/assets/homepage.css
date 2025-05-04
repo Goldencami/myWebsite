@@ -1,11 +1,20 @@
+header {
+    height: 100vh;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 350px;
+    box-sizing: border-box;
+}
 #headline {
-    color: rgb(42, 15, 121);
+    color: #2a0f79;
 }
 
 #headline {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    border-bottom: 5px solid rgb(91, 71, 219);
 }
 
 #avatar {
@@ -28,4 +37,8 @@
 
 #headline p {
     text-align: right;
+}
+
+.resume-block {
+    border-top: 5px solid rgb(91, 71, 219);
 }
