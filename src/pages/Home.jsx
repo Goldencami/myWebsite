@@ -5,7 +5,7 @@ import '../assets/homepage.css'
 function Home() {
     const tkd_freelance = [
         `Developed and maintained a cross-platform desktop application 
-        using Electron-Vite and ReactJS.`,
+        using Electron-Vite and React.`,
 
         `Created a responsive and user-friendly interface tailored for 
         Taekwondo athletes, coaches, and enthusiasts.`,
@@ -23,7 +23,7 @@ function Home() {
 
     const software_app_intern = [
         `Contributed to the maintenance and enhancement of an application 
-        to improve the judicial system, utilizing C# and ReactJS.`,
+        to improve the judicial system, utilizing C# and React.`,
 
         `Maintained new implemented code or existing code to correct reported problems.`,
         `Collaborated with the development team to implement new features, 
@@ -78,23 +78,23 @@ function Home() {
                         </h3>
                         <PositionDescription 
                             year='Jan 2025 - Aug 2025' 
-                            company= 'Cyberjustice Laboratory, UdeM'
+                            company= 'Cyberjustice Laboratory'
                             position='AR/VR Developer Intern'
                             desc={ar_app_intern}
                         />
 
                         <PositionDescription 
-                            year='Sept 2024 - Dec 2024' 
-                            company= 'Cyberjustice Laboratory, UdeM'
-                            position='Software Developer Part-Time Intern'
-                            desc={software_app_intern}
-                        />
-
-                        <PositionDescription 
-                            year='May 2024 - Aug 2024' 
+                            year='Jan 2025 - March 2025' 
                             company= 'HLD Taekwondo'
                             position='Software Developer Freelancer'
                             desc={tkd_freelance}
+                        />
+
+                        <PositionDescription 
+                            year='Sept 2024 - Dec 2024' 
+                            company= 'Cyberjustice Laboratory'
+                            position='Software Developer Part-Time Intern'
+                            desc={software_app_intern}
                         />
                     </section>
                 </div>
@@ -105,7 +105,7 @@ function Home() {
                             TECH STACK
                         </h3>
                         <ul>
-                            <li>ReactJs</li>
+                            <li>React</li>
                             <li>C/C++</li>
                             <li>Python</li>
                             <li>Java</li>
