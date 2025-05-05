@@ -1,0 +1,39 @@
+#software-projects h1, #models-3d h1 {
+    text-align: center;
+    margin: 1.4em auto;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+
+/* Sotware projects */
+#carousel-container h4, #carousel-container p {
+    text-align: center;
+}
+
+.carousel-item .slider {
+    object-fit: contain;
+    max-height: 600px;
+}
+
+.description-col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3D Projects */
+#models-3d {
+    padding-bottom: 4em;
+}
+
+#models-3d .card-row {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.card-row .card-body {
+    text-align: center;
+}

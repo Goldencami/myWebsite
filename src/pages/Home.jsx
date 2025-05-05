@@ -4,7 +4,7 @@ import '../assets/homepage.css'
 
 function Home() {
     const tkd_freelance = [
-        `Developed and developed a cross-platform desktop application 
+        `Developed and maintained a cross-platform desktop application 
         using Electron-Vite and ReactJS.`,
 
         `Created a responsive and user-friendly interface tailored for 
