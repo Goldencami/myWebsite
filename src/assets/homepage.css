@@ -7,38 +7,100 @@ header {
     background-attachment: fixed;
     min-height: 350px;
     box-sizing: border-box;
-}
-#headline {
-    color: #2a0f79;
+    color: #ffffff;
 }
 
-#headline {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+/* Resume and about me */
+#resume-body {
+    padding: 3rem;
+}
+
+#resume-summary p {
+    margin-top: 1.4rem;
+}
+
+.resume-section-header {
+    font-size: 1.225rem;
+    letter-spacing: .15rem;
+    color: #2a0f79;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
 }
 
 #avatar {
     border-radius: 50%;
     display: inline;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 8px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     max-width: 100%;
-    width: 200px;
+    width: 110px;
     height: auto;
 }
 
-#headline h2, #headline p {
-    height: 100%;
-    align-content: center;
+/* resume work experience*/
+.job-position {
+    padding-bottom: 3rem;
 }
 
-#headline h2 {
-    text-align: left;
+.resume-icon {
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    padding-left: .15rem;
+    background: rgb(91, 71, 219);
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 8px;
 }
 
-#headline p {
+#resume-summary, #tech-stack, #projects, #education {
+    margin-bottom: 2rem;
+}
+
+#resume-work-experience, #tech-stack, #projects, #education, #languages {
+    margin-top: 2rem;
+}
+
+.company-name {
+    background: rgba(226, 222, 251, 0.83);
+    padding: .2rem .5rem;
+    border-radius: .25rem;
+    font-weight: 600;
     text-align: right;
+    max-width: fit-content;
 }
 
-.resume-block {
-    border-top: 5px solid rgb(91, 71, 219);
+hr {
+    color: rgb(91, 71, 219);
+    border-width: 3px;
+    opacity: 100%;
+}
+
+/* Resume education and languages */
+#education li, #languages li  {
+    list-style-type: none;
+}
+
+#education .resume-degree, #languages p  {
+    color: #121822;
+    font-weight: bold;
+    font-size: .875rem;
+}
+
+#languages li {
+    margin-bottom: 1em;
+}
+
+#languages p {
+    margin-bottom: 0;
+}
+
+.progress-bar {
+    background-color: rgb(148, 133, 248);
 }

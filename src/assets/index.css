@@ -1,10 +1,8 @@
 body {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Andika", sans-serif;  line-height: 1.5;
   font-weight: 400;
+  font-style: normal;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #dc9090;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,7 +12,8 @@ body {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  /* color: #646cff; */
+  color: white;
   text-decoration: inherit;
 }
 
@@ -49,6 +48,11 @@ button:focus-visible {
 }
 
 /* Navbar */
+#nav {
+  color: #ffffff;
+  background-color: hsla(237, 69%, 10%, 0.452);
+}
+
 #nav .col {
   margin-top: auto;
   margin-bottom: auto;

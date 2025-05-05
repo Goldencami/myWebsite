@@ -9,10 +9,18 @@ function Navigator() {
                 </Link>
                 <div className='col'>
                     <ul>
-                        <li>Home</li>
-                        <li>Drawing</li>
-                        <li>3D Projects</li>
-                        <li>App Demo</li>
+                        <li>
+                            <Link to='/'>Home</Link>
+                        </li>
+                        <li>
+                            <Link to='/projects'>Projects</Link>
+                        </li>
+                        <li>
+                            <Link to='/drawings'>Drawings</Link>
+                        </li>
+                        <li>
+                            <Link to='/taekwondo-application'>App</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className='col' id='profiles-list'>
