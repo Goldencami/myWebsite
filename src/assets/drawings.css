@@ -1,10 +1,17 @@
 
 #drawings-gallery h1 {
     text-align: center;
+    margin: 1.4em auto;
 }
 
 .drawing-container {
     transition: all .2s ease-in-out;
+}
+
+.drawing-container:hover {
+    filter: blur(1px);
+    filter: grayscale(100%);
+    transform: scale(1.1);
 }
 
 .drawing-container .drawing {
@@ -12,4 +19,12 @@
     max-width: 100%;
     display: block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#first-col {
+    margin-top: 3.4em;
+}
+
+#third-col {
+    margin-top: 7.6em;
 }

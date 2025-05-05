@@ -1,5 +1,7 @@
 header {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-image: url('/images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,6 +10,29 @@ header {
     min-height: 350px;
     box-sizing: border-box;
     color: #ffffff;
+}
+
+header h1, header h2 {
+    font-size: 5em;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0,0,0, 1.5);
+}
+
+header #occupation {
+    font-size: 2em;
+    text-shadow: 0 0 10px rgba(0,0,0, 1.5);
+}
+
+header #occupation span {
+    color: #F6E232;
+}
+
+#content {
+    flex-grow: 1; /* fills remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* optional: centers content vertically */
+    align-items: center; /* optional: centers content horizontally */
 }
 
 /* Resume and about me */
@@ -20,12 +45,13 @@ header {
 }
 
 .resume-section-header {
-    font-size: 1.225rem;
+    font-weight: 900;
+    font-style: medium;
     letter-spacing: .15rem;
     color: #2a0f79;
-    font-weight: 900;
     display: flex;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 #avatar {
@@ -36,6 +62,10 @@ header {
     max-width: 100%;
     width: 110px;
     height: auto;
+}
+
+li {
+    margin-bottom: .5rem;
 }
 
 /* resume work experience*/
@@ -59,11 +89,11 @@ header {
     margin-right: 8px;
 }
 
-#resume-summary, #tech-stack, #projects, #education {
+#resume-summary, #tech-stack, #projects, #education, #languages {
     margin-bottom: 2rem;
 }
 
-#resume-work-experience, #tech-stack, #projects, #education, #languages {
+#resume-work-experience, #tech-stack, #projects, #education, #languages, #download-resume {
     margin-top: 2rem;
 }
 
@@ -83,14 +113,13 @@ hr {
 }
 
 /* Resume education and languages */
-#education li, #languages li  {
+#education li, #languages li, #download-resume li  {
     list-style-type: none;
 }
 
 #education .resume-degree, #languages p  {
     color: #121822;
     font-weight: bold;
-    font-size: .875rem;
 }
 
 #languages li {
@@ -103,4 +132,19 @@ hr {
 
 .progress-bar {
     background-color: rgb(148, 133, 248);
+}
+
+/* Download resume */
+.btn-download {
+    padding: 10px 20px;
+    background-color: #5c6bc0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    color: white;
+    background-color: #4757b1;
 }

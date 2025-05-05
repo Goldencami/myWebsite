@@ -30,17 +30,31 @@ function Home() {
         optimize performance, and ensure a user-friendly interface.`
     ]
 
-    const ar_app_intern = []
+    const ar_app_intern = [
+        `Contributed to a VR application on Meta Quest 3 that transforms 2D images into 
+        interactive 3D models, enhancing user engagement through immersive visualization.`,
+
+        `Helped design virtual training simulations to support experiential learning in 
+        legal education, enabling users to analyze and interpret interactive environments.`,
+
+        `Used tools like Unreal Engine and MetaXR to build user interfaces and environments optimized for VR.`
+    ]
+
+    const aboutMe = `Motivated computer science student with a strong interest in AI and robotics. 
+        Constantly expanding my knowledge in machine learning to enhance adaptive behavior and 
+        decision-making in robotic systems. Experienced in app development and passionate 
+        about leveraging AI to push the limits of what machines can learn and achieve. 
+        Eager to apply new skills in creating intelligent, responsive technologies.` 
 
     return(
         <>
         <header>
             <Navigator />
 
-            <div className='container-fluid text-center'>
+            <div className='container-fluid text-center' id='content'>
                 <h2>Hello Everyone!</h2>
                 <h1>I'm Camila Guzman</h1>
-                <h4 id='occupation'>| <span>Programmer</span> |</h4>
+                <p id='occupation'>| <span>Programmer</span> |</p>
             </div>
         </header>
 
@@ -52,9 +66,7 @@ function Home() {
                             <img id='avatar' src='/images/avatar.jpeg' alt='Camila Guzman photo' />
                             ABOUT ME
                         </h3>
-                        <p>Summarise your career profile here lorem ipsum dolor sit amet, 
-                            consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. 
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+                        <p>{aboutMe}</p>
                     </section>
 
                     <hr />
@@ -67,8 +79,8 @@ function Home() {
                         <PositionDescription 
                             year='Jan 2025 - Aug 2025' 
                             company= 'Cyberjustice Laboratory, UdeM'
-                            position='AR Developer Intern'
-                            desc={software_app_intern}
+                            position='AR/VR Developer Intern'
+                            desc={ar_app_intern}
                         />
 
                         <PositionDescription 
@@ -126,7 +138,7 @@ function Home() {
                             <li>
                                 <div className='resume-degree'>BCompSc in Computer Science</div>
                                 <div className='resume-degree-school'>Concordia University</div>
-                                <div v>2022-2026</div>
+                                <div className='resume-degree-year'>2022-2026</div>
                             </li>
                             <li>
                                 <div className='resume-degree'>Webmaster of the Engineering & Computer Science Association</div>
@@ -164,6 +176,24 @@ function Home() {
                             </li>
                         </ul>
                     </section>
+
+                    <hr />
+
+                    <section id='download-resume'>
+                        <h3 className='resume-section-header'>
+                            <i className='bi bi-file-earmark-person-fill resume-icon'></i>
+                            RESUME.PDF
+                        </h3>
+                        <div id='download-box'>
+                            <ul>
+                                <li>
+                                    <a href='/CamilaResume.pdf' className='btn-download' download>
+                                        Download Resume
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>                   
                 </div>
             </div>
         </div>
