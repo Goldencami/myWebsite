@@ -1,5 +1,6 @@
 import Navigator from '../Components/Navigator.jsx'
 import DrawingContainer from '../Components/DrawingContainer.jsx'
+import Modal from '../Components/Modal.jsx'
 import '../assets/drawings.css'
 
 function Drawings() {

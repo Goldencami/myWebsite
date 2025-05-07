@@ -1,16 +1,16 @@
 function Cards({ src, title, text }) {
     return(
-        <div class='col-lg-4'>
-            <div class='card'>
+        <div className='col-lg-4'>
+            <div className='card'>
                 <img
                     src={src}
-                    class='card-img-top'
+                    className='card-img-top'
                     alt={title}
                 />
-                <div class='card-body'>
-                    <h5 class='card-title'>{title}</h5>
-                    <p class='card-text'>{text}</p>
-                    <a href='#!' data-mdb-ripple-init class='btn btn-primary'>View</a>
+                <div className='card-body'>
+                    <h5 className='card-title'>{title}</h5>
+                    <p className='card-text'>{text}</p>
+                    <a href='#!' data-mdb-ripple-init className='btn btn-primary'>Preview</a>
                 </div>
             </div>
         </div>
